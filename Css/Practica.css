@@ -1,0 +1,192 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+/* 
+    Created on : 30/03/2020, 9:16:43
+    Author     : Baskonia
+*/
+
+
+/*****************************menu*****************************/
+
+.sub-menu-parent {
+    position: relative;
+}
+
+.sub-menu {
+    visibility: hidden;
+    /* hides sub-menu */
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+
+/* margenes */
+
+nav a {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.menuFijo {
+    position: fixed;
+    /*Fixed ya que queremos que la posición sea en relación al navegador*/
+    top: 0;
+    /*El valor 0 indica que va a quedar arriba de todo*/
+    left: 0;
+    /*Para que el menu se ubique siempre en la parte izquierda de la pantalla*/
+    width: 100%;
+    /*100% para que ocupe todo el ancho del navegador*/
+    z-index: 2;
+}
+
+nav a:hover {
+    color: #F55;
+}
+
+
+/*
+nav>ul>li {
+    display: inline-block;
+    border-left: solid 1px #aaa;
+}
+*/
+
+nav>ul>li:first-child {
+    border-left: none;
+}
+
+
+/* quita la linea al primer elemento*/
+
+.sub-menu {
+    background: black;
+}
+
+.logo {
+    text-align: left;
+}
+
+
+/*****************************Index*************************************/
+
+.capaoculta {
+    display: block;
+}
+
+.imgTexto img:hover~.capaoculta {
+    display: block;
+}
+
+.imgKevinInicio {
+    width: 831px;
+    height: 829px;
+}
+
+.imgKevinBandInicio {
+    width: 980px;
+}
+
+
+/*****************************Footer*************************************/
+
+.footer {
+    background-color: #3B3A3A;
+    padding-top: 0px;
+    margin: 0px;
+    height: 100px;
+    text-align: center;
+}
+
+
+/*****************************About*************************************/
+
+.imgIntegrantes {
+    width: 306px;
+    height: 306px;
+}
+
+.imgIntegrantesP {
+    width: 406px;
+    height: 406px;
+}
+
+.imgBanda {
+    width: 1056px;
+    height: 701px;
+}
+
+.imgKevin {
+    width: 710px;
+    height: 726px;
+}
+
+
+/*****************************Projects*************************************/
+
+.imgKarla {
+    height: 370px;
+}
+
+.imgAlex {
+    height: 370px;
+}
+
+.imgIsrael {
+    height: 370px;
+}
+
+.imgFausto {
+    height: 370px;
+}
+
+.imgKarina {
+    height: 370px;
+}
+
+.imgGuanaco {
+    height: 370px;
+}
+
+
+/********************general****************/
+
+h2 {
+    color: #bf8123;
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: bold;
+    color: #bf8123;
+}
+
+hr {
+    color: #bf8123;
+}
+
+
+/*****************************Photos*************************************/
+
+.imgPhotos {
+    height: 320px;
+    width: 320px;
+}
+
+
+/*****************************Music*************************************/
+
+.borde {
+    border: 1px solid gray;
+}
